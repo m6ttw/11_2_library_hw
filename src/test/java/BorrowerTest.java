@@ -46,10 +46,10 @@ public class BorrowerTest {
         assertEquals(1, borrower.bookShelfCount());
     }
 
-//    @Test
-//    public void canReturnToLibrary(){
-//        borrower.addToBookShelf(book);
-//        borrower.returnToLibrary(library);
-//        assertEquals(1, library.bookCount());
-//    }
+    @Test
+    public void canReturnToLibrary(){
+        borrower.addToBookShelf(book);
+        borrower.returnToLibrary(library);
+        assertEquals(1, library.bookCount());
+    }
 }

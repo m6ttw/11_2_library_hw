@@ -30,8 +30,9 @@ public class Borrower {
         this.bookShelf.add(book);
     }
 
-//    public void returnToLibrary(Library library){
-//        Book book = library.addBook(book);
-//        this.bookShelf.remove(0);
-//    }
+    public void returnToLibrary(Library library){
+        Book book = new Book("Trainspotting", "Irvine Welsh", "Genre");
+        this.removeFromBookshelf();
+        library.addBook(book);
+    }
 }
