@@ -1,8 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import java.awt.print.Book;
-
 import static org.junit.Assert.assertEquals;
 
 public class LibraryTest {
@@ -13,7 +11,7 @@ public class LibraryTest {
     @Before
     public void before(){
         library = new Library("Newington Library", 4);
-        book = new Book();
+        book = new Book("The Hobbit", "J.R.R. Tolkien", "Fantasy");
     }
 
     @Test

@@ -16,4 +16,13 @@ public class Borrower {
     public int bookShelfCount() {
         return this.bookShelf.size();
     }
+
+    public void addToBookShelf(Book book) {
+        this.bookShelf.add(book);
+    }
+
+//    public void borrowFromLibrary(Library library) {
+//        Book book = library.lendBook();
+//        this.bookShelf.add(book);
+//    }
 }

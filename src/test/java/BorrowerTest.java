@@ -26,6 +26,12 @@ public class BorrowerTest {
         assertEquals(0, borrower.bookShelfCount());
     }
 
+    @Test
+    public void canAddBookToShelf(){
+        borrower.addToBookShelf(book);
+        assertEquals(1, borrower.bookShelfCount());
+    }
+
 //    @Test
 //    public void canBorrowFromLibrary(){
 //        library.addBook(book);
