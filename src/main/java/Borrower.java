@@ -21,6 +21,10 @@ public class Borrower {
         this.bookShelf.add(book);
     }
 
+    public Book removeFromBookshelf(){
+        return this.bookShelf.remove(0);
+    }
+
     public void borrowFromLibrary(Library library) {
         Book book = library.lendBook();
         this.bookShelf.add(book);
