@@ -6,10 +6,12 @@ import java.util.ArrayList;
 public class Library {
     private String name;
     private ArrayList<Book> collection;
+    private int capacity;
 
-    public Library(String name){
+    public Library(String name, int capacity){
         this.name = name;
         this.collection = new ArrayList<Book>();
+        this.capacity = capacity;
     }
 
     public String getName() {
@@ -21,6 +23,8 @@ public class Library {
     }
 
     public void addBook(Book book){
+        if (collection.size() < this.capacity){
         this.collection.add(book);
+        }
     }
 }
