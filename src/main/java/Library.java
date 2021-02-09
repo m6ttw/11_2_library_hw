@@ -15,4 +15,8 @@ public class Library {
     public String getName() {
         return this.name;
     }
+
+    public int countBooks() {
+        return this.collection.size();
+    }
 }

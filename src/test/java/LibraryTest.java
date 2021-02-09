@@ -16,4 +16,9 @@ public class LibraryTest {
     public void hasName(){
         assertEquals("Newington Library", library.getName());
     }
+
+    @Test
+    public void booksCounted(){
+        assertEquals(0, library.countBooks());
+    }
 }
