@@ -16,4 +16,14 @@ public class BorrowerTest {
     public void hasName(){
         assertEquals("Matt", borrower.getName());
     }
+
+    @Test
+    public void bookShelfCounted(){
+        assertEquals(0, borrower.bookShelfCount());
+    }
+
+//    @Test
+//    public void canBorrowFromLibrary(){
+//        assertEquals(1, borrower.bookShelf)
+//    }
 }

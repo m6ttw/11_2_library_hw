@@ -9,8 +9,11 @@ public class Borrower {
         this.bookShelf = new ArrayList<Book>();
     }
 
-
     public String getName() {
         return this.name;
+    }
+
+    public int bookShelfCount() {
+        return this.bookShelf.size();
     }
 }
