@@ -25,6 +25,10 @@ public class Library {
         }
     }
 
+    public void receiveReturnedBook(Book book){
+        this.collection.add(book);
+    }
+
     public Book lendBook(){
         return this.collection.remove(0);
     }

@@ -29,4 +29,9 @@ public class Borrower {
         Book book = library.lendBook();
         this.bookShelf.add(book);
     }
+
+//    public void returnToLibrary(Library library){
+//        Book book = library.addBook(book);
+//        this.bookShelf.remove(0);
+//    }
 }

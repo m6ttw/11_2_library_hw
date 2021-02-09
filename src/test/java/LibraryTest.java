@@ -48,4 +48,10 @@ public class LibraryTest {
         library.lendBook();
         assertEquals(0, library.bookCount());
     }
+
+    @Test
+    public void canReceiveReturnedBook(){
+        library.receiveReturnedBook(book);
+        assertEquals(1, library.bookCount());
+    }
 }
