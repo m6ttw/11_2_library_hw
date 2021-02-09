@@ -21,8 +21,8 @@ public class Borrower {
         this.bookShelf.add(book);
     }
 
-//    public void borrowFromLibrary(Library library) {
-//        Book book = library.lendBook();
-//        this.bookShelf.add(book);
-//    }
+    public void borrowFromLibrary(Library library) {
+        Book book = library.lendBook();
+        this.bookShelf.add(book);
+    }
 }

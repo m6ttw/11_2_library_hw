@@ -32,10 +32,10 @@ public class BorrowerTest {
         assertEquals(1, borrower.bookShelfCount());
     }
 
-//    @Test
-//    public void canBorrowFromLibrary(){
-//        library.addBook(book);
-//        borrower.borrowFromLibrary(library);
-//        assertEquals(1, borrower.bookShelfCount());
-//    }
+    @Test
+    public void canBorrowFromLibrary(){
+        library.addBook(book);
+        borrower.borrowFromLibrary(library);
+        assertEquals(1, borrower.bookShelfCount());
+    }
 }
